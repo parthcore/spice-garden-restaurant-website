@@ -1,0 +1,265 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f0;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    color: #c0392b;
+    font-size: 40px;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+nav {
+    background-color: #2c2c2c;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    color: white;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 17px;
+}
+
+nav a:hover {
+    color: #f39c12;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4");
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 55px;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 22px;
+    margin: 20px 0;
+}
+
+.hero .menu-button {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hero .menu-button:hover {
+    background-color: #e67e22;
+}
+
+.menu-section {
+    padding: 70px 40px;
+    background-color: #fff8f0;
+}
+
+.menu-section h2 {
+    font-size: 40px;
+    color: #c0392b;
+    margin-bottom: 10px;
+}
+
+.menu-section > p {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.menu-card {
+    background-color: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+.menu-card h3 {
+    color: #2c2c2c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.menu-card p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.menu-card span {
+    display: block;
+    margin-top: 20px;
+    color: #e67e22;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    padding: 80px 40px;
+    text-align: center;
+    background-color: #2c2c2c;
+    color: white;
+}
+
+.about-section h2 {
+    font-size: 40px;
+    color: #f39c12;
+    margin-bottom: 25px;
+}
+
+.about-section p {
+    max-width: 750px;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.contact-section {
+    padding: 70px 40px;
+    text-align: center;
+    background-color: #fff8f0;
+}
+
+.contact-section h2 {
+    font-size: 40px;
+    color: #c0392b;
+    margin-bottom: 30px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin: 12px 0;
+    color: #555;
+}
+
+.contact-section .order-button {
+    margin-top: 25px;
+    background-color: #c0392b;
+    color: white;
+    border: none;
+    padding: 14px 30px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.contact-section .order-button:hover {
+    background-color: #a93226;
+}
+
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav a {
+        margin: 0 8px;
+        font-size: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 20px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .menu-section {
+        padding: 50px 20px;
+    }
+
+    .menu-card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .about-section,
+    .contact-section {
+        padding: 50px 20px;
+    }
+
+}
